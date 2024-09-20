@@ -21,7 +21,7 @@ def query_engine(vector_store,documents,model_name,query):
 
 if __name__ == "__main__":
     model_name='all-minilm'
-    vector_store,document=create_vector_store('data/Textos_de_Entrenamientos.txt',model_name) #Aqui puedes colocarle el texto el cual quieres que la IA responda tus querys o preguntas
+    vector_store,document=create_vector_store('data/Textos_de_Entrenamientos.txt',model_name) #Aqui puedes colocarle el texto el cual quieres que la IA responda tus querys o preguntas. El archivo de entrenamiento debe estar en la carpeta Data del proyecto.
     while True:
         query = input('My query: ')
         if query=='exit':
